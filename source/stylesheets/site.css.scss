@@ -1,24 +1,33 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+#css-overrides {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    // background-color: #8e6060;
+    a {
+      color: #000000;
+      text-decoration: none;
+      &:hover {
+        color: #BDBDBD;
+      }
+    }
+  .home-name {
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px;
+    font-size: 38px;
   }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+    }
+  .container {
+    position: absolute;
+    display: table;
+    width: 90%;
+    height: 100%;
+    margin-top: -3rem;
+    margin-left: 5%;
+    overflow: hidden;
+    z-index: 10;
+  }
 }

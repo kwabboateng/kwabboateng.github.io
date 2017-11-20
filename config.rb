@@ -14,6 +14,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -47,7 +48,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'master'
   deploy.build_before = true
 end

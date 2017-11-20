@@ -5,12 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Kwab Boateng" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "site", 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css','https://fonts.googleapis.com/css?family=Nunito:200|Roboto', 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body id="css-overrides">
     <%= yield %>
     <%= google_analytics_tag %>
 
